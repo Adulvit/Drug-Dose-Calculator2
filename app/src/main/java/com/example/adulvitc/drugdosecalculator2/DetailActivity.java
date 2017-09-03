@@ -59,9 +59,6 @@ public class DetailActivity extends AppCompatActivity {
 
 
 
-        final String[] titleStrings = getResources().getStringArray(R.array.title);
-
-
         Button nextButton = (Button) findViewById(R.id.btnNext);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
