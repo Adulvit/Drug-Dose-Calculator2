@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud3">
+
+
+    <!--Head-->
+    <ImageView
+        android:id="@+id/imvTop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo10" />
+
+    <!--Content-->
+    <LinearLayout
+        android:id="@+id/linTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvTop"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Title"
+            android:textColor="@color/textcolorPrimaryDark"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold" />
+
+        <!--Fill Input-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--Input-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Volume"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/txtVolume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="pcs"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MBW"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+                    <EditText
+                        android:id="@+id/txtMBW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="g/pcs"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--Calculate Button-->
+            <Button
+                android:id="@+id/btnCal1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Answer-->
+    <LinearLayout
+        android:id="@+id/linBiomass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@+id/linTitle"
+        android:layout_alignParentStart="true">
+
+
+        <!--Answer Biomass-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Biomass"
+                        android:gravity="right"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+                    <TextView
+                        android:id="@+id/txtAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:hint="Anwser" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="KG"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="@dimen/h2" />
+
+                    <TextView
+                        android:id="@+id/txtUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:hint="unit"
+                        android:textSize="@dimen/h2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Botton-->
+    <LinearLayout
+        android:id="@+id/linButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Back"
+            android:onClick="BackPage2"
+            android:textColor="@color/textcolorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnCal2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Calculate"
+            android:textColor="@color/textcolorPrimaryDark" />
+
+    </LinearLayout>
+
+    <!--Animation-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linButton2"
+        android:layout_below="@+id/linBiomass"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#82ffffff"
+            android:src="@drawable/animation2"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

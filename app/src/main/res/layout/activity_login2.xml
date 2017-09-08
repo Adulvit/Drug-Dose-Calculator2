@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <!--Content-->
+    <LinearLayout
+        android:background="#82ffffff"
+        android:padding="15dp"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <!--Logo-->
+        <ImageView
+
+            android:src="@drawable/mylogo"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon" />
+
+        <!--Title-->
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1"
+            android:text="Drug Dose Calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--User-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/ic_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <EditText
+                android:id="@+id/etUsername"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="text"
+                android:hint="User :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/ic_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <EditText
+                android:id="@+id/etPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPassword"
+                android:hint="Password :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--New Resgister-->
+
+        <TextView
+            android:id="@+id/tvRegisterLink"
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <!--Button-->
+    <Button
+        android:id="@+id/bSignIn"
+        android:textColor="@color/textcolorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="@dimen/margin1"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
