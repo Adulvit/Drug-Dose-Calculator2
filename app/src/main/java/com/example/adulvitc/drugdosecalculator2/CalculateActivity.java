@@ -23,7 +23,7 @@ public class CalculateActivity extends AppCompatActivity {
 
         final EditText volEditText = (EditText) findViewById(R.id.txtVolume);
         final EditText mbwEditText = (EditText) findViewById(R.id.txtMBW);
-        Button cal1Button = (Button) findViewById(R.id.btnCal1);
+        final Button cal1Button = (Button) findViewById(R.id.btnCal1);
         final TextView anwTextView = (TextView) findViewById(R.id.txtAnswer);
         final TextView titleTextView2 = (TextView) findViewById(R.id.txtTitle2);
         final TextView unitTextView = (TextView) findViewById(R.id.txtUnit);
@@ -35,11 +35,28 @@ public class CalculateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                double x = Integer.parseInt(volEditText.getText().toString());
-                double y = Integer.parseInt(mbwEditText.getText().toString());
-                double result = (x * y) / 1000;
+                final AlertDialog.Builder ad = new AlertDialog.Builder(CalculateActivity.this);
 
-                anwTextView.setText(String.valueOf(result));
+                ad.setTitle("Error! ");
+                ad.setIcon(R.drawable.icon_question);
+                ad.setPositiveButton("Close", null);
+
+                if (volEditText.getText().length() == 0 || mbwEditText.getText().length() == 0) {
+                    {
+                        ad.setMessage("Please insert Volume and MBW");
+                        ad.show();
+                        volEditText.requestFocus();
+                        return;
+                    }
+
+                } else {
+                    double x = Integer.parseInt(volEditText.getText().toString());
+                    double y = Integer.parseInt(mbwEditText.getText().toString());
+                    double result = (x * y) / 1000;
+
+                    anwTextView.setText(String.valueOf(result));
+
+                }
             }
 
 
