@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo10" />
+        android:src="@drawable/logo71" />
 
     <!--Head Title-->
     <LinearLayout
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Recommend"
+            android:text="คำแนะนำการใช้"
             android:textColor="@color/textcolorPrimaryDark"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
@@ -50,14 +50,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#46000000"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="5dp">
 
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
+                android:padding="1dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -78,6 +80,7 @@
                         android:id="@+id/txtDrug"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:textColor="@color/textcolorPrimaryDark"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:hint="Alfanor 100 "
@@ -97,46 +100,70 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:background="#46000000"
+            android:padding="5dp">
 
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
+                android:padding="1dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="78dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_weight="1"
                         android:gravity="left"
-                        android:text="ปริมาณที่ใช้"
+                        android:text="ปริมาณ"
                         android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/txtAnswer"
-                        android:layout_width="match_parent"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:background="#46000000"
                         android:gravity="right"
-                        android:hint="500 - 1000 "
+                        android:hint="500 "
+                        android:phoneNumber="false"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:background="#46000000"
+                        android:textColor="@color/textcolorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtAnswer2"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:background="#46000000"
+                        android:gravity="left"
+                        android:hint="1000 "
+                        android:numeric="integer"
+                        android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/txtUnit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left"
+                        android:gravity="center"
                         android:hint="Unit "
+                        android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="20sp" />
 
 
@@ -154,7 +181,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:background="#46000000"
-            android:padding="15dp">
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/txtSame"

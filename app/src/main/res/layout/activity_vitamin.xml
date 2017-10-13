@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroud3">
@@ -50,37 +49,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="45dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="จำนวนปลา"
-                        android:gravity="center_horizontal"
-                        android:textColor="@color/textcolorPrimaryDark"
-                        android:textSize="@dimen/h2" />
-
-                    <EditText
-                        android:id="@+id/txtVolume"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:inputType="number" />
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:text="ตัว"
-                        android:textColor="@color/textcolorPrimaryDark"
-                        android:textSize="@dimen/h2" />
+
+
+
 
 
                 </LinearLayout>
@@ -95,27 +72,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="นน.เฉลี่ย"
-                        android:gravity="center_horizontal"
+                        android:text="ปริมาณอาหาร"
                         android:textColor="@color/textcolorPrimaryDark"
-                        android:textSize="@dimen/h2" />
+                        android:textSize="@dimen/h2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"/>
 
                     <EditText
-                        android:id="@+id/txtMBW"
-                        android:layout_width="match_parent"
+                        android:id="@+id/txtVolume"
+                        android:layout_width="131dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
                         android:gravity="center_horizontal"
-                        android:inputType="number|numberDecimal" />
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="number" />
 
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:gravity="center_horizontal"
-                        android:text="กรัม/ตัว"
+                        android:text="KG"
                         android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="@dimen/h2" />
 
@@ -125,13 +101,7 @@
             </LinearLayout>
 
 
-            <!--Calculate Button-->
-            <Button
-                android:id="@+id/btnCal1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Cal" />
+
 
         </LinearLayout>
 
@@ -142,7 +112,7 @@
     <LinearLayout
         android:id="@+id/linBiomass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="vertical"
         android:padding="15dp"
         android:layout_below="@+id/linTitle"
@@ -152,55 +122,11 @@
         <!--Answer Biomass-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:orientation="horizontal">
 
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="น้ำหนักรวม"
-                        android:gravity="right"
-                        android:textColor="@color/textcolorPrimaryDark"
-                        android:textSize="@dimen/h2" />
-
-                    <TextView
-                        android:id="@+id/txtAnswer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:textSize="20sp"
-                        android:hint="Answer" />
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="กิโลกรัม"
-                        android:textColor="@color/textcolorPrimaryDark"
-                        android:textSize="@dimen/h2" />
-
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
 
 
         </LinearLayout>
@@ -253,7 +179,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#82ffffff"
-            android:src="@drawable/animation2"
+            android:src="@drawable/animation5"
 
             />
 
@@ -262,3 +188,4 @@
 
 
 </RelativeLayout>
+

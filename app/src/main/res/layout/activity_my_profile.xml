@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud3">
+
+
+    <!--Content-->
+    <LinearLayout
+        android:id="@+id/linAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin1"
+            android:layout_margin="@dimen/margin1">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imvIcon"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Profile Work Experience"
+                android:textColor="@color/textcolorPrimaryDark"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:background="#64ffffff"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:padding="1dp">
+
+
+            <!--Image-->
+            <ImageView
+                android:id="@+id/imvIcon"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/my_picture1" />
+
+
+            <TextView
+                android:id="@+id/txtDetail1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Detail_Profile"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            >
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:background="#64ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--Detail-->
+                    <TextView
+                        android:id="@+id/txtDetail2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin1"
+                        android:text="Detail_Profile2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--Botton-->
+    <LinearLayout
+        android:id="@+id/linButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Back"
+            android:textColor="@color/textcolorPrimaryDark" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

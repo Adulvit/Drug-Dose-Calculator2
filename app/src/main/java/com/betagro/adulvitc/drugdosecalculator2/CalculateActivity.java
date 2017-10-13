@@ -1,4 +1,4 @@
-package com.example.adulvitc.drugdosecalculator2;
+package com.betagro.adulvitc.drugdosecalculator2;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -13,7 +13,7 @@ public class CalculateActivity extends AppCompatActivity {
 
     private EditText volEditText, mbwEditText;
     private Button cal1Button, cal2Button, backButton;
-    private TextView anwTextView, titleTextView2, txtUnit;
+    private TextView anwTextView, titleTextView2;
 
 
     @Override
@@ -26,7 +26,7 @@ public class CalculateActivity extends AppCompatActivity {
         final Button cal1Button = (Button) findViewById(R.id.btnCal1);
         final TextView anwTextView = (TextView) findViewById(R.id.txtAnswer);
         final TextView titleTextView2 = (TextView) findViewById(R.id.txtTitle2);
-        final TextView unitTextView = (TextView) findViewById(R.id.txtUnit);
+
 
         Button backButton = (Button) findViewById(R.id.btnBack1);
 
@@ -37,13 +37,13 @@ public class CalculateActivity extends AppCompatActivity {
 
                 final AlertDialog.Builder ad = new AlertDialog.Builder(CalculateActivity.this);
 
-                ad.setTitle("Error! ");
+                ad.setTitle("ผิดพลาด! ");
                 ad.setIcon(R.drawable.icon_question);
                 ad.setPositiveButton("Close", null);
 
                 if (volEditText.getText().length() == 0 || mbwEditText.getText().length() == 0) {
                     {
-                        ad.setMessage("Please insert Volume and MBW");
+                        ad.setMessage("กรุณากรอกจำนวนปลาและน้ำหนักเฉลี่ย");
                         ad.show();
                         volEditText.requestFocus();
                         return;
@@ -51,10 +51,10 @@ public class CalculateActivity extends AppCompatActivity {
 
                 } else {
                     double x = Integer.parseInt(volEditText.getText().toString());
-                    double y = Integer.parseInt(mbwEditText.getText().toString());
-                    double result = (x * y) / 1000;
+                    double y = Double.parseDouble(mbwEditText.getText().toString());
+                    double z = (x * y) / 1000;
 
-                    anwTextView.setText(String.valueOf(result));
+                    anwTextView.setText(String.valueOf(z));
 
                 }
             }
@@ -63,20 +63,19 @@ public class CalculateActivity extends AppCompatActivity {
         });
 
 
-        // Calculator
-
-
         // Show View
-
         // Real Show-Title show
         final int intIndex2 = getIntent().getIntExtra("Title", 0);
         String[] titleStrings2 = getResources().getStringArray(R.array.title);
         titleTextView2.setText(titleStrings2[intIndex2]);
 
         // Dummy Show-Unit show
-        final int intIndex3 = getIntent().getIntExtra("Unit", 0);
+        final int intUnit = getIntent().getIntExtra("unit", 0);
         String[] unitStrings = getResources().getStringArray(R.array.unit);
-        unitTextView.setText(unitStrings[intIndex3]);
+
+        final int intSame = getIntent().getIntExtra("same_detail", 0);
+        String[] sameStrings = getResources().getStringArray(R.array.same_detail);
+
 
 
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -91,16 +90,40 @@ public class CalculateActivity extends AppCompatActivity {
         cal2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalculateActivity.this, ResultActivity.class);
-                intent.putExtra("Title", intIndex2);
-                intent.putExtra("Unit", intIndex3);
-                startActivity(intent);
+
+
+                final AlertDialog.Builder ad = new AlertDialog.Builder(CalculateActivity.this);
+
+                ad.setTitle("ผิดพลาด! ");
+                ad.setIcon(R.drawable.icon_question);
+                ad.setPositiveButton("Close", null);
+
+
+                if (anwTextView.getText().length() == 0) {
+                    ad.setMessage("กรุณาคำนวณค่าน้ำหนักรวม");
+                    ad.show();
+                    anwTextView.requestFocus();
+                    return;
+                } else {
+                    Intent intent = new Intent(CalculateActivity.this, ResultActivity.class);
+                    intent.putExtra("Answer", anwTextView.getText().toString());
+                    intent.putExtra("Title", intIndex2);
+                    intent.putExtra("unit", intUnit);
+                    intent.putExtra("same_detail",intSame);
+                    startActivity(intent);
+
+                }
+
             }
         });
 
 
     }  //Main Method
 
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }  //Main Class
 
 

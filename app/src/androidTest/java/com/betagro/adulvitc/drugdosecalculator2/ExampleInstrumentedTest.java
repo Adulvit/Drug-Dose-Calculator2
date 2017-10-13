@@ -1,4 +1,4 @@
-package com.example.adulvitc.drugdosecalculator2;
+package com.betagro.adulvitc.drugdosecalculator2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
