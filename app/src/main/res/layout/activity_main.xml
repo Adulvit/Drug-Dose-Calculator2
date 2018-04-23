@@ -5,6 +5,8 @@
     android:background="@drawable/backgroud3">
 
     <LinearLayout
+        android:layout_above="@id/linButton2"
+        android:id="@+id/linButton1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -26,13 +28,23 @@
             android:layout_width="match_parent"
             android:layout_height="354dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginBottom="0dp"
             android:layout_marginLeft="@dimen/margin1"
             android:layout_marginRight="@dimen/margin1"
             android:layout_weight="0.80">
 
         </ListView>
 
+
+    </LinearLayout>
+
+    <!--Botton-->
+    <LinearLayout
+        android:id="@+id/linButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnABme"
@@ -41,10 +53,11 @@
             android:background="@color/colorPrimaryDark"
             android:layout_marginLeft="@dimen/margin1"
             android:layout_marginRight="@dimen/margin1"
-            android:layout_marginTop="@dimen/margin1"
+            android:layout_marginBottom="@dimen/margin1"
             android:text="About Me"
             android:onClick="NextPageABme"
             android:textColor="@color/textcolorPrimaryDark" />
+
 
 
     </LinearLayout>
