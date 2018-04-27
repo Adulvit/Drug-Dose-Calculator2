@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
         final int[] imageInts = new int[]{R.drawable.alfanor1,
                 R.drawable.tenamoxin1, R.drawable.antibac1,
                 R.drawable.oxybac501, R.drawable.ditrim,
