@@ -4,26 +4,46 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo4"
+        android:icon="@drawable/logo11"
         android:label="Drug Dose Calculator"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.MainActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.DetailActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.CalculateActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.ResultActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.RegisterActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.UserAreaActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.Login2Activity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.MyProfileActivity" />
-        <activity android:name="com.betagro.adulvitc.drugdosecalculator2.VitaminActivity"></activity>
+        <activity android:name=".DetailActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CalculateActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UserAreaActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Login2Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MyProfileActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".VitaminActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PhotoViewActivity"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>
