@@ -17,33 +17,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".CalculateActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".ResultActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".RegisterActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".UserAreaActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".Login2Activity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".MyProfileActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".VitaminActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".PhotoViewActivity"
-            android:screenOrientation="portrait"
-            ></activity>
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalculateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserAreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VitaminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AquanesActivity">
+            android:screenOrientation="portrait" />
+        </activity>
     </application>
 
 </manifest>
