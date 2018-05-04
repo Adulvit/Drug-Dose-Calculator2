@@ -13,7 +13,8 @@ public class CalculateActivity extends AppCompatActivity {
 
     private EditText volEditText, mbwEditText;
     private Button cal1Button, cal2Button, backButton;
-    private TextView anwTextView, titleTextView2;
+    private TextView anwTextView;
+    public TextView titleTextview;
 
 
     @Override
@@ -25,7 +26,7 @@ public class CalculateActivity extends AppCompatActivity {
         final EditText mbwEditText = (EditText) findViewById(R.id.txtMBW);
         final Button cal1Button = (Button) findViewById(R.id.btnCal1);
         final TextView anwTextView = (TextView) findViewById(R.id.txtAnswer);
-        //final TextView titleTextView2 = (TextView) findViewById(R.id.txtTitle2);
+        final TextView titleTextView = (TextView) findViewById(R.id.txtTitle2);
 
 
         Button backButton = (Button) findViewById(R.id.btnBack1);
@@ -65,9 +66,9 @@ public class CalculateActivity extends AppCompatActivity {
 
         // Show View
         // Real Show-Title show
-        /*final int intIndex2 = getIntent().getIntExtra("Title", 0);
+        final int intIndex2 = getIntent().getIntExtra("Title", 0);
         String[] titleStrings2 = getResources().getStringArray(R.array.title);
-        titleTextView2.setText(titleStrings2[intIndex2]);*/
+        //titleTextView.setText(titleStrings2[intIndex2]);
 
         // Dummy Show-Unit show
         final int intUnit = getIntent().getIntExtra("unit", 0);
@@ -108,7 +109,7 @@ public class CalculateActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(CalculateActivity.this, ResultActivity.class);
                     intent.putExtra("Answer", anwTextView.getText().toString());
-                    //intent.putExtra("Title", intIndex2);
+                    intent.putExtra("Title", intIndex2);
                     intent.putExtra("unit", intUnit);
                     intent.putExtra("same_detail",intSame);
                     startActivity(intent);
