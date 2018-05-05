@@ -30,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final int[] imageInts = new int[]{R.drawable.alfanor1,
-                R.drawable.tenamoxin1, R.drawable.antibac1,
-                R.drawable.oxybac501, R.drawable.ditrim,
-                R.drawable.aquac, R.drawable.adekm};
+                R.drawable.tenamoxin500, R.drawable.antibac1,
+                R.drawable.oxybac50_1, R.drawable.ditrim,
+                R.drawable.aquac, R.drawable.adec_m1,R.drawable.ectomec,R.drawable.aqaunes1};
+
+
 
         final String[] titleStrings = getResources().getStringArray(R.array.title);
         final String[] detailStrings = getResources().getStringArray(R.array.detail);
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+
                 Intent intent = new Intent(MainActivity.this, DetailActivity.class);
                 intent.putExtra("Title", titleStrings[i]);
                 intent.putExtra("Detail", detailStrings[i]);
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Index", i);
                 intent.putExtra("Unit", i);
                 startActivity(intent);
+
             }  // on Item click
         });
 
