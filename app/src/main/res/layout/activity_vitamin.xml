@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Title"
+            android:text="คำนวณปริมาณอาหาร"
             android:textColor="@color/textcolorPrimaryDark"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
@@ -91,7 +91,7 @@
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="KG"
+                        android:text="@string/KG"
                         android:textColor="@color/textcolorPrimaryDark"
                         android:textSize="@dimen/h2" />
 
@@ -149,7 +149,7 @@
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
-            android:text="Back"
+            android:text="@string/Back"
             android:onClick="BackPage2"
             android:textColor="@color/textcolorPrimaryDark" />
 
@@ -160,7 +160,7 @@
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
-            android:text="Calculate"
+            android:text="@string/Calculate"
             android:textColor="@color/textcolorPrimaryDark" />
 
     </LinearLayout>
