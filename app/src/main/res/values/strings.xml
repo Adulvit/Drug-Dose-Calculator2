@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Drug Dosage Aquaculture</string>
     <string name="Alfanor100">Title</string>
+    <string name="Back">ย้อนกลับ</string>
+    <string name="Next">ถัดไป</string>
+    <string name="Calculate">คำนวณ</string>
+    <string name="Cal">CAL</string>
+    <string name="About_Me">ผู้พัฒนาแอพพลิเคชั่น</string>
+    <string name="Work_Experience">ประวัตินักพัฒนาโปรแกรม</string>
+    <string name="Recommend">คำแนะนำการใช้</string>
+    <string name="Finish">จบการทำงาน</string>
+
+
+
 </resources>
